@@ -22,6 +22,9 @@
     display: flex;
     flex-direction: row;
 }
+.menu a{
+    display: inline;
+}
 .menu-item{
     text-align: center;
     text-decoration: none;
@@ -33,10 +36,25 @@
 .search{
     float: right;
     margin: 10px 0;
+    position: relative;
 }
-.form-search{
-    float: right;
+.search input#search{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    color: #63717f
 }
+.search .icon{
+    font-size: 1.5em;
+    position: absolute;
+    right: 14px;
+    bottom: 0.5px;
+    z-index: 1;
+    color: #4f5b66
+}
+
 .form-search input{
     border: 0;
 }
