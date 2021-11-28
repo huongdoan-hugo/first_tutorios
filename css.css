@@ -116,3 +116,10 @@ img{
     max-width: 100%;
     vertical-align: middle;
 }
+.items{
+    width: 15%;
+    height: auto;
+}
+.items .comment p{
+    text-align: center;
+}
