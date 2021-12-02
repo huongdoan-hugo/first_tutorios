@@ -101,7 +101,23 @@
 .form-search input{
     border: 0;
 }
+/* ---------header----------- */
 
+.temb{
+    display: block;
+}
+.temb h2{
+    display: inline;
+    float: left;
+}
+.items-list-type ul{
+    bottom: 2px;
+}
+.items-list-type li{
+    display: inline;
+}
+
+/* ----------footer----------- */
 .footer{
     background-color: rgb(201, 243, 241);
     padding: 10px 30px;
