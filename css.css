@@ -98,6 +98,8 @@
 .temb h2{
     display: inline;
     float: left;
+    margin: 3px;
+    padding: 3px;
 }
 .items-list-type ul{
     bottom: 2px;
@@ -125,16 +127,18 @@
 }
 .anhQC{
     width: 100%;
-    height: auto;
+    height: 100%;
     transform-style: preserve-3d;
 }
 img{
     max-width: 100%;
     vertical-align: middle;
 }
+
 .items{
-    width: 15%;
-    height: auto;
+    width: 500px;
+    height: 700px;
+    background-color: blueviolet;
 }
 .items .comment p{
     text-align: center;
