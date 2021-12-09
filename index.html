@@ -10,48 +10,48 @@
     <title>Document</title>
 </head>
 <body>
+<div class="main">
     <!-----------------header-------------------->
     <div class="header">
-            <div class="logo" style="flex-basis: 20%;">
+            <div class="logo" >
                 <img src="./logo_200x200.png" alt="logo" class="img-logo" style="width: 100%;">
             </div>
             <div class="menu" style="flex-basis: 50%;">
-                <div class="category" style="flex-grow: 2;"><a class="menu-item" href="#">sale</a></div>
-                <div class="category" style="flex-grow: 2;"><a class="menu-item" href="#">sản phẩm mới</a></div>
-                <div class="category" style="flex-grow: 2;"><a class="menu-item" href="#">quẩn áo</a></div>
-                <div class="category" style="flex-grow: 2;"><a class="menu-item" href="#">phụ kiện</a></div>
-                <div class="category" style="flex-grow: 2;"><a class="menu-item" href="#">sự kiện</a></div>
+                <div class="menus" style="flex-grow: 2;"><a class="menu-item" href="#">SALE</a></div>
+                <div class="menus" style="flex-grow: 2;"><a class="menu-item" href="#">SẢN PHẨM MỚI</a></div>
+                <div class="menus" style="flex-grow: 2;"><a class="menu-item" href="#">QUẦN ÁO</a></div>
+                <div class="menus" style="flex-grow: 2;"><a class="menu-item" href="#">PHỤ KIỆN</a></div>
+                <div class="menus" style="flex-grow: 2;"><a class="menu-item" href="#">SỰ KIỆN</a></div>
                     
             </div>
             <div class="search" style="flex-basis: 20%;">
-                <div class="searchin">
+                <div class="searchinput">
+                    <span>
                 <form action="#" class="formSearch">
-                    
                     <input type="text" id="search" placeholder="Search.." name="search">
                     <a class="icon"><i class="fa fa-search"></i></a>
-                
                 </form>
+            </span>
             </div>
             </div>
     </div>
     <!-----------------body------------------>
-    <div class="main">
+    <div class="slides">
         <div class="anhQC">
             <a href="#">
                 <img src="https://storage.googleapis.com/cdn.nhanh.vn/store/662/bn/Anh_bia.png" style="width: 100%; height: 100%;" alt="nen">
             </a>
         </div>
-        <div class="stall">
-            <div class="temb">
-                
-                <h2 ><a href="#">Sản phẩm mới</a>
-                </h2>
-                
-                <div class="items-list-type">
-                    <ul class="item-type">
-                        <li>Quần</li>
-                        <li>Áo</li>
-                        <li>phụ kiện</li>
+        <div class="categorys">
+            <div class="category" style="height: 60px;">
+                <div id="lable">            
+                <h2 >Sản phẩm mới</h2>
+                </div>
+                <div id="category-item">
+                    <ul>
+                        <li>QUẦN</li>
+                        <li>ÁO</li>
+                        <li>PHỤ KIỆN</li>
                     </ul>
                 </div>
             </div>
@@ -90,5 +90,6 @@
         </div>
     </div>
     </div>
+</div>
 </body>
 </html>
