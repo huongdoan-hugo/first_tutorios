@@ -57,7 +57,15 @@
 .menus a:hover{
     background-color: #63717f;
     color: white;
+    position: relative;
 }
+.dropdown{
+    position: absolute;
+    min-width: 160px;
+    
+    z-index: 1;
+}
+
 
 .search{
     display: flex;
