@@ -1,8 +1,10 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
 }
 .logo{
     width: 190px;
@@ -11,11 +13,13 @@
     overflow: hidden;
     margin: 0 0 0 5px;
 }
+
 .logo img{ 
     display: block;
     height: auto;
     width: 100%;
 }
+
 .header{
     overflow: hidden;
     display: flex;
@@ -31,39 +35,38 @@
     flex-direction: row;
 
 }
+
 .menu{
     display: flex;
     margin: 0px 20px;
     align-items: center;
     
 }
+
 .menus{
     display: flex;
     font-family:sans-serif;
-    
+    height: 100%;
+    position: relative;
+    border-width: 2px;
+    border-color: #333;
 }
 
-.menu-item{
+.menus a{
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    border: 1;
-    padding: 5px 0 5px 0;
+    line-height: 60px;
+    border-width: 5px;
 }
-.menus a:hover{
-    background-color: #63717f;
-    color: white;
-    position: relative;
-}
-.dropdown{
-    position: absolute;
-    min-width: 160px;
-    
-    z-index: 1;
+
+
+.menus:hover a{
+    background-color: rgb(201, 243, 241);
+    color: #333;
+    border-radius: 5px;
+    border-bottom: 5px solid black;
 }
 
 
@@ -88,7 +91,6 @@
 
 .search .icon{
     text-align: center;
-    
     font-size: 1.5rem;
     position: absolute;
     z-index: 1;
@@ -97,9 +99,11 @@
     width: 35px;
     height: 35px;
 }
+
 .formSearch{
     position: relative;
 }
+
 .search .icon:hover{
     border-radius: 50%;
     background-color: rgb(169, 220, 233);
@@ -111,18 +115,36 @@
 }
 
 /* ----------body------------ */
+.category{
+    position: relative;
+    display: inline-block;
+}
 
 #lable {
     width: 230px;
     height: 50px;
     float: left;
 }
+
 #category-item{
     float: left;
 }
-#category-item > ul > li{
+
+/* - list sản phẩm- */
+
+
+.nav li{
     display: inline-block;
-    margin: 0 10px;
+    margin: 30px 10px 0 0;
+}
+.nav li a{
+    padding: 5px 10px;
+    
+}
+
+.nav li:hover a{
+    background-color: rgb(201, 243, 241);
+    border-bottom: 5px solid black;
 }
 
 /* ----------footer----------- */
@@ -156,6 +178,7 @@ img{
     width: 500px;
     height: 700px;
     background-color: blueviolet;
+    
 }
 .items .comment p{
     text-align: center;
