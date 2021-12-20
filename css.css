@@ -273,9 +273,21 @@ img{
 .list-items > .items:hover .option{
     display: block;
 }
-.items-img > a:hover img{
-    src:url("https://storage.googleapis.com/cdn.nhanh.vn/store/662/ps/20211112/AK6100__2_.jpg")
+.list-items > .items:hover #hover{
+    display: block;
 }
+.items-img{
+    position: relative;
+}
+.items-img #hover{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
 
 
 /* ----------footer----------- */
