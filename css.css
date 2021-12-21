@@ -29,7 +29,7 @@ img{
     top: 0px;
     z-index: 1;
     display: flex;
-    background-color: rgb(144, 199, 199);
+    background-color: #fff;
     justify-content: space-between;
     height: 60px;
     width: 100%;
@@ -184,7 +184,7 @@ img{
 
 /* ----------body------------ */
 .slides{
-    margin-top: 60px;
+    margin-top: 70px;
 }
 .slides .anhQC{
     width: 100%;
@@ -192,7 +192,7 @@ img{
     transform-style: preserve-3d;
 }
 .content{
-    padding: 0 40px;
+    padding: 0 40px 15px;
 }
 .categorys .nav li{
     display: inline-block;
@@ -215,6 +215,9 @@ img{
     height: 50px;
     float: left;
 }
+.category #lable h2{
+    font-weight: bold;
+}
 #category-item{
     float: left;
 }
@@ -230,6 +233,7 @@ img{
 }
 .items{
     margin-bottom: 35px;
+    min-width: 200px;
 }
 .items-comment{
     text-align: center;
@@ -287,7 +291,13 @@ img{
     overflow: hidden;
     transition: 0.5s ease;
 }
-
+.imgStore{
+    width: 100%;
+    padding: 30px 0;
+}
+.imgStore img{
+    width: 100%;
+}
 
 
 /* ----------footer----------- */
@@ -307,3 +317,8 @@ img{
     background-color: rgb(187, 226, 250);
     border-radius: 30%;
 }
+.footer .footer-div{
+    float: left;
+    width: 25%;
+}
+
