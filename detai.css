@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+.modal {
+    float: left;
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    width: 800px;
+    min-height: 700px;
+    padding: 30px 15px;
+    background-color: #fff;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.modal-imgs {
+    float: left;
+    width: 60%;
+    padding: 15px;
+}
+
+.modal-img-list-font {
+    float: left;
+    width: 12%;
+    cursor: pointer;
+}
+
+.modal-img-opption {
+    padding: 5px;
+    margin: 0 0 10px;
+    border: 1px solid #ddd;
+}
+
+.modal-img-slide {
+    float: left;
+    width: 88%;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.modal-product {
+    float: left;
+    width: 40%;
+    padding-bottom: 10px;
+}
+.modal-product .product-status{
+    width: 100%;
+    padding: 0 0 10px;
+    border-bottom: 1px dotted #dfe0e1;
+}
+
+.modal-product .product-status p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.modal-product span {
+    font-size: 14px;
+}
+
+.modal-product .status {
+    font-weight: bold;
+}
+
+.modal-select-size{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.modal-property .modal-price p{
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.modal-property .modal-size p {
+    padding: 0 0 10px;
+}
+.modal-property{
+    display: inline-block;
+    padding-bottom: 15px;
+}
+.modal-btn{
+    margin-top: 15px;
+}
+.modal-btn .btn-buy{
+    display: block;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    line-height: 40px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+}
