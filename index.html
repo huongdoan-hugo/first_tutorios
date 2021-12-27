@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css.css" />
     <link rel="stylesheet" href="/icon/themify-icons-font/themify-icons/themify-icons.css">
+
+    <script src="/javascrip.js"></script>
     <title>Document</title>
 </head>
 
@@ -176,7 +178,7 @@
                             </div>
                             <div class="item-select">
                                 <div class="option buy">
-                                    <a href="#">Mua nhanh</a>
+                                    <button href="#" class="js-buy-ticket btn">Mua nhanh</button>
                                 </div>
                                 <div class="option show">
                                     <a href="#">Xem chi tiết</a>
@@ -199,7 +201,7 @@
                             </div>
                             <div class="item-select">
                                 <div class="option buy">
-                                    <a href="#">Mua nhanh</a>
+                                    <button href="#" class="js-buy-ticket btn">Mua nhanh</button>
                                 </div>
                                 <div class="option show">
                                     <a href="#">Xem chi tiết</a>
@@ -221,7 +223,7 @@
                             </div>
                             <div class="item-select">
                                 <div class="option buy">
-                                    <a href="#">Mua nhanh</a>
+                                    <button href="#" class="js-buy-ticket btn">Mua nhanh</button>
                                 </div>
                                 <div class="option show">
                                     <a href="#">Xem chi tiết</a>
@@ -243,7 +245,7 @@
                             </div>
                             <div class="item-select">
                                 <div class="option buy">
-                                    <a href="#">Mua nhanh</a>
+                                    <button href="#" class="js-buy-ticket btn">Mua nhanh</button>
                                 </div>
                                 <div class="option show">
                                     <a href="#">Xem chi tiết</a>
@@ -265,7 +267,7 @@
                             </div>
                             <div class="item-select">
                                 <div class="option buy">
-                                    <a href="#">Mua nhanh</a>
+                                    <button href="#" class="js-buy-ticket btn">Mua nhanh</button>
                                 </div>
                                 <div class="option show">
                                     <a href="#">Xem chi tiết</a>
@@ -287,7 +289,7 @@
                             </div>
                             <div class="item-select">
                                 <div class="option buy">
-                                    <a href="#">Mua nhanh</a>
+                                    <button href="#" class="js-buy-ticket btn">Mua nhanh</button>
                                 </div>
                                 <div class="option show">
                                     <a href="#">Xem chi tiết</a>
@@ -309,7 +311,7 @@
                             </div>
                             <div class="item-select">
                                 <div class="option buy">
-                                    <a href="#">Mua nhanh</a>
+                                    <button href="#" class="js-buy-ticket btn">Mua nhanh</button>
                                 </div>
                                 <div class="option show">
                                     <a href="#">Xem chi tiết</a>
@@ -331,7 +333,7 @@
                             </div>
                             <div class="item-select">
                                 <div class="option buy">
-                                    <a href="#">Mua nhanh</a>
+                                    <button href="#" class="js-buy-ticket btn">Mua nhanh</button>
                                 </div>
                                 <div class="option show">
                                     <a href="#">Xem chi tiết</a>
@@ -457,7 +459,7 @@
         </div>
     </div>
 
-    <div class="modal">
+    <div class="modal js-modal">
         <div class="modal-container">
             <div class="modal-close">
                 <i class="ti-close"></i>
@@ -503,14 +505,42 @@
                         <div class="modal-select-size">XL</div>
                         <div class="modal-select-size">2XL</div>
                     </div>
-                    
+
                 </div>
                 <div class="modal-btn">
-                    <button class="btn-buy">SỞ HỮU NGAY</button>
+                    <button class="btn-buy btn">SỞ HỮU NGAY</button>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.modal-close')
+        const modelContener = document.querySelector('.modal-container')
+
+        function showBuyTickets() {
+            modal.classList.add("open")
+        }
+
+        function openModal() {
+            modal.classList.add("open")
+        }
+
+        function closeModal() {
+            modal.classList.remove("open")
+        }
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+        modalClose.addEventListener('click', closeModal)
+
+        modal.addEventListener('click', closeModal)
+
+        modelContener.addEventListener('click', function(event) {
+            event.stopPropagation();
+        })
+    </script>
 
 </body>
 
